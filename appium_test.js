@@ -6,7 +6,7 @@ const opts = {
         platformName: "iOS",
         platformVersion: "12.1",
         deviceName: "iPhone 7",
-        app: "/Users/akosbirmacher/Develop/Xcode/github/app/sample-apps-ios-appium.app",
+        app: "./ddata/Build/Products/Debug-iphoneos/sample-apps-ios-appium.app",
         automationName: "XCUITest",
     }
   };
