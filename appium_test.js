@@ -15,8 +15,10 @@ const opts = {
 
   client
   .init()
-  .click("~App")
-  .click("~Alert Dialogs")
-  .back()
-  .back()
-  .end();
+  .click('~hello_button');
+
+
+// wd example
+// let element = await driver.elementByAccessibilityId('id', 'hello_button');
+// await element.click();
+
