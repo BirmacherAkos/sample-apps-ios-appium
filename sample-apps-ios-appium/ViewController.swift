@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  sample-apps-ios-appium
@@ -9,18 +10,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var byeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func onHelloButtonClicked(_ sender: Any) {
-        let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
-        }))
-        self.present(alert, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [unowned self] in
+            self.byeButton.isHidden = false
+        }
+        
     }
     
 }
