@@ -1,3 +1,4 @@
+
 //
 //  ViewController.swift
 //  sample-apps-ios-appium
@@ -9,12 +10,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var byeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func onHelloButtonClicked(_ sender: Any) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [unowned self] in
+            self.byeButton.isHidden = false
+        }
+        
+    }
+    
 }
 

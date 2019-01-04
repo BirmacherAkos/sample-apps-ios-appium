@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sleep": "^5.2.3",
+    "source-map-support": "^0.5.9",
+    "wd": "^1.11.1",
+    "webdriverio": "4.14.1"
+  }
+}
