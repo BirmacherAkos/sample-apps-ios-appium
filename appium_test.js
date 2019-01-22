@@ -15,5 +15,11 @@ const opts = {
 
   client
   .init()
-  .click('~hello_button');
+  .setValue('~top_textfield', '12')
+  .setValue('~bottom_textfield', '13')
+  .click('~add_button')
+  .waitForVisible('~clear_button', 5000, false, function(result) {
+    console.log(result)
+  }).click('~clear_button');
+
   
