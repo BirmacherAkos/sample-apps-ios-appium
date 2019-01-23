@@ -4,9 +4,9 @@ const opts = {
     port: 4723,
     desiredCapabilities: {
         platformName: "iOS",
-        platformVersion: "11.4",
+        platformVersion: "12.1",
         deviceName: "iPhone 7",
-        app: "/Users/vagrant/git/ddata/Build/Products/Debug-iphoneos/sample-apps-ios-appium.app",
+        app: "./ddata/Build/Products/Debug-iphonesimulator/sample-apps-ios-appium.app",
         automationName: "XCUITest",
     }
   };
